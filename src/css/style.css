@@ -16,7 +16,7 @@ a {
     background-color: #bf40bf;
     border-radius: 13%;
 }
-.navbar .nav-link:hover {
+.navbar .navbar-nav .nav-link:hover {
     color: #fff;
     background-color: #bf40bf;
 }
@@ -70,6 +70,16 @@ time {
     background-color: #bf40bf;
     border-color: #bf40bf;
 }
+.row {
+    scroll-margin-top: 56px;
+}
+.navbar .login {
+    color: #bf40bf;
+}
+.offcanvas {
+    width: 230px !important;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .list-group .list-group-item {
         flex-wrap: wrap;
