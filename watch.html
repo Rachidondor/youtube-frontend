@@ -88,43 +88,349 @@
         <div class="mt-5 mb-3 d-inline-block">
             <div class="card mt-4 border-0">
                 <div class="row">
-                    <div class="col-lg-7">
-                        <video controls poster="public/img/poster.png" muted loop class="w-100 align-middle p-0">
-                          <source src="public/video/hsoub.webm" type="video/webm">
-                          <source src="public/video/hsoub.mp4" type="video/mp4">
-                          <track kind="captions" src="public/video/caption.vtt" srclang="ar" label="عربي"></track>
-                          لايدعم متصفحك العنصر
-                        </video>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card-block px-3 py-2 p-lg-0">
-                          <small class="text-muted">
-                            <i class="bi bi-play-btn"></i> <span>200 ألف مشاهدة</span>
-                            <i class="bi bi-clock ps-2"></i> <span>قبل 4 أشهر</span>
-                            <a href="channel.html" class="channel-img">
-                              <img src="public/img/ch-logo.png" alt="photo" class="rounded-circle my-2 ms-3" width="30">
-                              <span class="card-text ps-2">أكادمية حسوب</span>
-                            </a>
-                          </small>
-                          <h4>دورة تطوير واجهات المستخدم-أكادمية حسوب</h4>
-                          <p>تم اعداد هذه الدورة على يد نخبة من المبرمجين العرب بتسلسل بسيط و واضح,
-                            بانهائك لها ستصبح مطور <span id="dots">...</span><span id="more"> واجهات مستخدم دون الحاجة لإمتلاك معرفة مسبقة بالبرمجة,
-                            خلال هذه الرحلة ستتعلم تطوير واجهات المستخدم خطوة بخطوة اعتمادا على التجربة
-                            العملية و المادة العلمية التي يقدمها مدربون محترفون.
-                            </span>
-                          </p>
-                          <button class="btn mb-4" id="myBtn">عرض المزيد</button>
-                          <div>
-                            <i class="bi bi-heart fs-3 px-1" title="احببته"></i> 
-                            <i class="bi bi-clock fs-3 px-1" title="المشاهدة لاحقا"></i> 
-                            <i class="bi bi-share fs-3 px-1" title="مشاركة"></i> 
-                            <i class="bi bi-bookmark fs-3 px-1" title="حفظ"></i>
-                          </div>
-                        </div>
-                    </div>
+                  <div class="col-lg-7">
+                    <video controls poster="public/img/poster.png" muted loop class="w-100 align-middle p-0">
+                      <source src="public/video/hsoub.webm" type="video/webm">
+                      <source src="public/video/hsoub.mp4" type="video/mp4">
+                      <track kind="captions" src="public/video/caption.vtt" srclang="ar" label="عربي"></track>
+                     لايدعم متصفحك العنصر
+                    </video>
+                  </div>
+                  <div class="col-lg-5">
+                  <div class="card-block px-3 py-2 p-lg-0">
+                  <small class="text-muted">
+                    <i class="bi bi-play-btn"></i> <span>200 ألف مشاهدة</span>
+                    <i class="bi bi-clock ps-2"></i> <span>قبل 4 أشهر</span>
+                   <a href="channel.html" class="channel-img">
+                    <img src="public/img/ch-logo.png" alt="photo" class="rounded-circle my-2 ms-3" width="30">
+                    <span class="card-text ps-2">أكادمية حسوب</span>
+                   </a>
+                  </small>
+                <h4>دورة تطوير واجهات المستخدم-أكادمية حسوب</h4>
+                <p>تم اعداد هذه الدورة على يد نخبة من المبرمجين العرب بتسلسل بسيط و واضح,
+                 بانهائك لها ستصبح مطور <span id="dots">...</span><span id="more"> واجهات مستخدم دون الحاجة لإمتلاك معرفة مسبقة بالبرمجة,
+                 خلال هذه الرحلة ستتعلم تطوير واجهات المستخدم خطوة بخطوة اعتمادا على التجربة
+                 العملية و المادة العلمية التي يقدمها مدربون محترفون.
+                  </span>
+                </p>
+                <button class="btn mb-4" id="myBtn">عرض المزيد</button>
+                <div>
+                  <i class="bi bi-heart fs-3 px-1" title="احببته"></i> 
+                  <i class="bi bi-clock fs-3 px-1" title="المشاهدة لاحقا"></i> 
+                  <i class="bi bi-share fs-3 px-1" title="مشاركة"></i> 
+                  <i class="bi bi-bookmark fs-3 px-1" title="حفظ"></i>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="row mt-4 px-2">
+        <div class="col-xl-7 order-xl-1 order-2">
+          <div class="mb-3">
+          <span>عدد التعليقات 4</span>
+          <span class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">الترتيب على حسب</button>
+            <div class="dropdown-menu" style="right: 0;">
+             <a class="dropdown-item">التاريخ</a>
+             <a class="dropdown-item">الأبجدية</a>
+            </div>
+          </span>
+          </div>
+          <div class="public-comments">
+            <textarea class="form-control" rows="4" placeholder="أضف تعليق عام"></textarea>
+            <button type="submit" class="btn btn-info mt-3">تعليق</button>
+            <div class="card mt-5 mb-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-2 col-12">
+                    <img src="public/img/avatar.jpg" alt="" class="img-rounded img-fluid" style="min-width: 6rem; width: 100%;">
+                    <p>مند 40 دقيقة</p>
+                  </div>
+                  <div class="col-sm-10 col-12">
+                    <div class="d-block float-end">
+                      <span><i class="bi bi-star"></i></span>
+                      <span><i class="bi bi-star-half"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                    </div>
+                    <p class="mb-1">
+                      <a href="#"><strong>أحمد سالم</strong></a>
+                    </p>
+                    <p>مرحبا, شكرا لكم على هذه الدورة الرائعة</p>
+                    <div class="mt-4">
+                      <a href="#" class="btn btn-info btn-text-white ms-2">
+                        <i class="bi bi-reply"></i> الردود
+                      </a>
+                      <a href="#" class="btn btn-info btn-text-white ms-2">
+                        <i class="bi bi-heart"></i> أعجبني
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-inner ms-5 mt-3">
+                  <div class="card-body">
+                 <div class="row">
+                  <div class="col-sm-2 col-12">
+                    <img src="public/img/avatar.jpg" alt="" class="img-rounded img-fluid" style="min-width: 6rem; width: 100%;">
+                    <p style="text-align: center;">مند 30 دقيقة</p>
+                  </div>
+                  <div class="col-sm-10 col-12">
+                    <p class="mb-1">
+                      <a href="#"><strong>أكادمية حسوب</strong></a>
+                    </p>
+                    <p>أهلا أحمد, سعيدون جدا لأن الدورة أعجبتك</p>
+                    <div class="mt-4">
+                       <a href="#" class="btn btn-info btn-text-white ms-2">
+                        <i class="bi bi-heart"></i> أعجبني
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mt-5 mb-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-2 col-12">
+                    <img src="public/img/avatar.jpg" alt="" class="img-rounded img-fluid" style="min-width: 6rem; width: 100%;">
+                    <p>مند 20 دقيقة</p>
+                  </div>
+                  <div class="col-sm-10 col-12">
+                    <div class="d-block float-end">
+                      <span><i class="bi bi-star"></i></span>
+                      <span><i class="bi bi-star-half"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                    </div>
+                    <p class="mb-1">
+                      <a href="#"><strong>أحمد يمامة</strong></a>
+                    </p>
+                    <p>جميل جدا من أفضل الدورات التي شاهدتها. شكرا لجهودكم</p>
+                    <div class="mt-4">
+                      <a href="#" class="btn btn-info btn-text-white ms-2">
+                        <i class="bi bi-reply"></i> الردود
+                      </a>
+                      <a href="#" class="btn btn-info btn-text-white ms-2">
+                        <i class="bi bi-heart"></i> أعجبني
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-inner ms-5 mt-3">
+                  <div class="card-body">
+                 <div class="row">
+                  <div class="col-sm-2 col-12">
+                    <img src="public/img/avatar.jpg" alt="" class="img-rounded img-fluid" style="min-width: 6rem; width: 100%;">
+                    <p style="text-align: center;">مند 7 دقائق</p>
+                  </div>
+                  <div class="col-sm-10 col-12">
+                    <p class="mb-1">
+                      <a href="#"><strong>أكادمية حسوب</strong></a>
+                    </p>
+                    <p>أهلا أحمد, سعيدون جدا لأن الدورة أعجبتك</p>
+                    <div class="mt-4">
+                       <a href="#" class="btn btn-info btn-text-white ms-2">
+                        <i class="bi bi-heart"></i> أعجبني
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mt-5 mb-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-2 col-12">
+                    <img src="public/img/avatar.jpg" alt="" class="img-rounded img-fluid" style="min-width: 6rem; width: 100%;">
+                    <p>مند 10 دقائق</p>
+                  </div>
+                  <div class="col-sm-10 col-12">
+                    <div class="d-block float-end">
+                      <span><i class="bi bi-star"></i></span>
+                      <span><i class="bi bi-star-half"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                    </div>
+                    <p class="mb-1">
+                      <a href="#"><strong>أحمد هادي</strong></a>
+                    </p>
+                    <p>جميل جدا دورة رائعة</p>
+                    <div class="mt-4">
+                      <a href="#" class="btn btn-info btn-text-white ms-2">
+                        <i class="bi bi-reply"></i> الردود
+                      </a>
+                      <a href="#" class="btn btn-info btn-text-white ms-2">
+                        <i class="bi bi-heart"></i> أعجبني
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-inner ms-5 mt-3">
+                  <div class="card-body">
+                 <div class="row">
+                  <div class="col-sm-2 col-12">
+                    <img src="public/img/avatar.jpg" alt="" class="img-rounded img-fluid" style="min-width: 6rem; width: 100%;">
+                    <p style="text-align: center;">مند 5 دقائق</p>
+                  </div>
+                  <div class="col-sm-10 col-12">
+                    <p class="mb-1">
+                      <a href="#"><strong>أكادمية حسوب</strong></a>
+                    </p>
+                    <p>أهلا أحمد, سعيدون جدا لأن الدورة أعجبتك</p>
+                    <div class="mt-4">
+                       <a href="#" class="btn btn-info btn-text-white ms-2">
+                        <i class="bi bi-heart"></i> أعجبني
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5 order-1 order-xl-2">
+          <p>الاقتراحات</p>
+          <div class="card p-2 mb-4">
+            <div class="row">
+              <div class="col-sm-5 card-icons">
+                <a href="watch.html">
+                  <img class="w-100 h-100" src="public/img/thumbnail/ruby.jpg" alt="photo">
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                  <b><p>دورة تطوير تكبيقات الويب باستخدتم Ruby- أكادمية حسوب</p></b>
+                  <small class="text-muted"><i class="bi bi-film"></i> 1.6 مليون مشاهدة</small>
+                </a>
+                <a href="channel.html" class="d-block mt-2">
+                  <img src="public/img/ch-logo.png" alt="photp" width="30" class="rounded-circle">
+                  <span class="card-text">أكادمية حسوب</span>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4">
+            <div class="row">
+              <div class="col-sm-5 card-icons">
+                <a href="watch.html">
+                  <img class="w-100 h-100" src="public/img/thumbnail/mostaql2.png" alt="photo">
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                  <b><p>أفضل النصائح لإختيار أفضل المستقلين و الحفاظ على معدل توظيف مرتفع</p></b>
+                  <small class="text-muted"><i class="bi bi-film"></i> 1.3 مليون مشاهدة</small>
+                </a>
+                <a href="channel.html" class="d-block mt-2">
+                  <img src="public/img/mostaql.png" alt="photp" width="30" class="rounded-circle">
+                  <span class="card-text">مستقل</span>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4">
+            <div class="row">
+              <div class="col-sm-5 card-icons">
+                <a href="watch.html">
+                  <img class="w-100 h-100" src="public/img/thumbnail/khamsat3.png" alt="photo">
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                  <b><p>خطوات بسيطية لتسجيل بموقع خمسات و البدأ بربح المال</p></b>
+                  <small class="text-muted"><i class="bi bi-film"></i> 900 ألف مشاهدة</small>
+                </a>
+                <a href="channel.html" class="d-block mt-2">
+                  <img src="public/img/khamsat.jpg" alt="photp" width="30" class="rounded-circle">
+                  <span class="card-text">خمسات</span>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4">
+            <div class="row">
+              <div class="col-sm-5 card-icons">
+                <a href="watch.html">
+                  <img class="w-100 h-100" src="public/img/thumbnail/khamsat1.png" alt="photo">
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                  <b><p>تعلم كيف تقدم مهارتك على موقع خمسات</p></b>
+                  <small class="text-muted"><i class="bi bi-film"></i> 500 ألف مشاهدة</small>
+                </a>
+                <a href="channel.html" class="d-block mt-2">
+                  <img src="public/img/khamsat.jpg" alt="photp" width="30" class="rounded-circle">
+                  <span class="card-text">خمسات</span>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4">
+            <div class="row">
+              <div class="col-sm-5 card-icons">
+                <a href="watch.html">
+                  <img class="w-100 h-100" src="public/img/thumbnail/mostaql.png" alt="photo">
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                  <b><p>وظف أفضل المستقلين الموجودين في الوطن العربي</p></b>
+                  <small class="text-muted"><i class="bi bi-film"></i> 100 ألف مشاهدة</small>
+                </a>
+                <a href="channel.html" class="d-block mt-2">
+                  <img src="public/img/mostaql.png" alt="photp" width="30" class="rounded-circle">
+                  <span class="card-text">مستقل</span>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4">
+            <div class="row">
+              <div class="col-sm-5 card-icons">
+                <a href="watch.html">
+                  <img class="w-100 h-100" src="public/img/thumbnail/php.jpg" alt="photo">
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                  <b><p>دورة تطوير تكبيقات الويب باستخدتم PHP- أكادمية حسوب</p></b>
+                  <small class="text-muted"><i class="bi bi-film"></i> 25 ألف مشاهدة</small>
+                </a>
+                <a href="channel.html" class="d-block mt-2">
+                  <img src="public/img/ch-logo.png" alt="photp" width="30" class="rounded-circle">
+                  <span class="card-text">أكادمية حسوب</span>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
