@@ -28,4 +28,5 @@
 }
 .card:hover .card-top-image {
     filter: brightness(0.7);
+    
 }

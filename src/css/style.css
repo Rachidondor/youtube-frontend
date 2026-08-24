@@ -80,6 +80,13 @@ time {
     width: 230px !important;
 }
 
+.title-center {
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #bf40bf;
+    display: inline-block;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .list-group .list-group-item {
         flex-wrap: wrap;
