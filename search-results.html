@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script defer src="src/js/search-results.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/history-log.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&family=League+Gothic&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>نتائج البحث</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <i class="bi bi-list"></i>
+        </button>
+        <a class="navbar-brand ps-2" href="/">
+          يوتيوبي
+          <span class="video-icon p-1 mx-1"><i class="bi bi-play-btn"></i></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#suggested-videos">الفيديوهات المقترحة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recent-videos">المرفوعة حديثا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trending-videos">الفيديوهات الرائجة</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" action="search-results.html">
+            <input class="form-control me-2" type="search" placeholder="نص البحث..." aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">بحث</button>
+          </form>
+          <a href="login.html" class="nav-link login ps-2">تسجيل الدخول</a>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="list-group list-group-flush w-100 pt-4">
+        <a href="index.html" class="list-group-item list-group-item-action">
+          <i class="bi bi-house-door-fill"></i> الصفحة الرئيسية
+        </a>
+        <a href="index.html#suggested-videos" class="list-group-item list-group-item-action">
+          <i class="bi bi-compass"></i> الفيديوهات المقترحة
+        </a>
+        <a href="index.html#recent-videos" class="list-group-item list-group-item-action">
+          <i class="bi bi-plus-square"></i> المرفوعة حديثا
+        </a>
+        <a href="index.html#trending-videos" class="list-group-item list-group-item-action">
+          <i class="bi bi-fire"></i> الفيديوهات الرائجة
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-play-btn-fill"></i> فيديوهاتي
+        </a>
+        <a href="history-log.html" class="list-group-item list-group-item-action">
+          <i class="bi bi-clock-history"></i> سجل المشاهدة
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-collection-play"></i> الإشتراكات
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-film"></i> الأفلام والعروض
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-controller"></i> العاب فيديو
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-handbag"></i> الموضى و الجمال
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-mortarboard"></i> محتوى تعليمي
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-gear-fill"></i> الإعدادات
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-question-circle-fill"></i> المساعدة
+        </a>
+        <a href="https://academy.hsoub.com/" class="list-group-item list-group-item-action small text-muted border-bottom-0">
+        دورة تطوير واجهات المستخدم <br>
+        أكادمية حسوب &copy; 2026
+        </a>
+      </div>
+    </div>
+    <div class="container my-4 py-4">
+      <div class="row pt-2">
+        <div class="col-6">
+          حوالي 800 نتيجة
+        </div>
+        <div class="col-6">
+          <span role="button" class="float-end" id="search-filter-icon"><i class="bi bi-funnel"></i> تصفية</span>
+        </div>
+      </div>
+      <div class="row filter-row">
+        <div class="col-lg-3 col-md-6">
+          <div class="text-center">تاريخ التحميل</div>
+          <hr>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g1">
+            <span>اخر ساعة</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g1">
+            <span>اليوم</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g1">
+            <span>هذا الأسبوع</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g1">
+            <span>هذا الشهر</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g1">
+            <span>هذا العام</span>
+          </label>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="text-center">النوع</div>
+          <hr>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g2">
+            <span>فيديو</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g2">
+            <span>قناة</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g2">
+            <span>قائمة التشغيل</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g2">
+            <span>فيلم</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g2">
+            <span>عرض</span>
+          </label>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="text-center">التصنيف بحسب</div>
+          <hr>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g3">
+            <span>مدى الصلة</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g3">
+            <span>تاريخ التحميل</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g3">
+            <span>عدد المشاهدات</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g3">
+            <span>التقييم</span>
+          </label>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="text-center">المدة</div>
+          <hr>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g4">
+            <span>قصير(أقل من 4 دقائق)</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g4">
+            <span>طويل(أكثر من 4 دقائق)</span>
+          </label>
+        </div>
+      </div>
+     <div class="row">
+        <div class="col-12 my-4">
+          <div class="card mb-3">
+                <div class="card-horizontal d-md-flex d-block">
+                    <div class="col-md-5 col-xl-4 position-relative overflow-hidden">
+                      <a href="watch.html">
+                        <img src="/img/thumbnail/devtools.jpg" alt="" class="card-top-image w-100 h-100 object-fit-cover">
+                        <time datetime="">7:22</time>
+                        <i class="bi bi-play-btn play-btn fs-1"></i>
+                        <i class="bi bi-clock watch-later "></i>
+                      </a>
+                      <i class="bi bi-x remove"></i>
+                    </div>
+                    <div class="col-md-7 col-xl-8 card-body">
+                        <a href="watch.html"><h4>كيف تستخدم ادوات المطور devTools في chrome</h4></a>
+                        <p>ا تبني التفكير الابتكاري ليس موهبة ولد بها الإنسان أو حكراً على أشخاص بأعينهم، بل هو عضلة فكرية ومهارة قابلة للتطوير والتدريب المستمر. 
+                            الابتكار في جوهره ليس اختراع شيء من العدم، بل هو "إعادة ربط الأشياء الموجودة سابقاً بطريقة جديدة وذكية"
+                        </p>
+                        <small class="text-muted">
+                           <i class="bi bi-play-btn">  1 مليون مشاهدة</i> 
+                           <i class="bi bi-clock">  مند 11 شهر</i>
+                        </small>
+                        <a href="channel.html" class="channel-img d-inline-block mx-2">
+                         <img src="/img/ch-logo.png" alt="" width="30" class="rounded-circle">
+                         <span class="card-text">اكادمية حسوب</span>
+                        </a>
+                    </div>
+                </div>
+          </div>
+          <div class="card mb-3">
+                <div class="card-horizontal d-md-flex d-block">
+                    <div class="col-md-5 col-xl-4 position-relative overflow-hidden">
+                      <a href="watch.html">
+                        <img src="/img/thumbnail/khamsat3.png" alt="" class="card-top-image w-100 h-100 object-fit-cover">
+                        <time datetime="">6:25</time>
+                        <i class="bi bi-play-btn play-btn fs-1"></i>
+                        <i class="bi bi-clock watch-later "></i>
+                      </a>
+                      <i class="bi bi-x remove"></i>
+                    </div>
+                    <div class="col-md-7 col-xl-8 card-body">
+                        <a href="watch.html"><h4>خطوات بسيطة للتسجيل بموقع خمسات و البدأ بربح المال</h4></a>
+                        <p>ستتقرف من خلال هذا الدرس كيفية انشاء حساب في موقع خمسات, وأيضا ستتعرف الى كيفية استخدام مةقع حمسات. 
+                          و كيف تعرض خدماتك عليه لربح المال. 
+                        </p>
+                        <small class="text-muted">
+                           <i class="bi bi-play-btn"> 500 ألف مشاهدة</i> 
+                           <i class="bi bi-clock">  مند 9 أشهر</i>
+                        </small>
+                        <a href="channel.html" class="channel-img d-inline-block mx-2">
+                         <img src="/img/khamsat.jpg" alt="" width="30" class="rounded-circle">
+                         <span class="card-text">خمسات</span>
+                        </a>
+                    </div>
+                </div>
+          </div>
+          <div class="card mb-3">
+                <div class="card-horizontal d-md-flex d-block">
+                    <div class="col-md-5 col-xl-4 position-relative overflow-hidden">
+                      <a href="watch.html">
+                        <img src="/img/thumbnail/frontend.jpg" alt="" class="card-top-image w-100 h-100 object-fit-cover">
+                        <time datetime="">3:22</time>
+                        <i class="bi bi-play-btn play-btn fs-1"></i>
+                        <i class="bi bi-clock watch-later "></i>
+                      </a>
+                      <i class="bi bi-x remove"></i>
+                    </div>
+                    <div class="col-md-7 col-xl-8 card-body">
+                        <a href="watch.html"><h4>دورة تطوير واجهات المستخدم أكادمية حسوب</h4></a>
+                        <p>تم اعداد هذه الدورة على يد نخبة من المبرمجين العرب بتسلسل بسيط و واضح, بإنهائك لها ستصبح 
+                          مطور واجهات مستخدم دون الحاجة لإمتلاك معرفة مسبقة بالبرمجة. خلال هذه ستتعلم تكوير واجهات المستخدم
+                          خطوة بخطوة اعتمادا على التجربة العلمية و المادة العلمية التي يقدمها محترفون متخصصون.
+                        </p>
+                        <small class="text-muted">
+                          <i class="bi bi-play-btn"> 200 ألف مشاهدة</i> 
+                          <i class="bi bi-clock">  مند 4 أشهر</i>
+                        </small>
+                        <a href="channel.html" class="channel-img d-inline-block mx-2">
+                         <img src="/img/ch-logo.png" alt="" width="30" class="rounded-circle">
+                         <span class="card-text">اكادمية حسوب</span>
+                        </a>
+                    </div>
+                </div>
+          </div>
+          <div class="card mb-3">
+                <div class="card-horizontal d-md-flex d-block">
+                    <div class="col-md-5 col-xl-4 position-relative overflow-hidden">
+                      <a href="watch.html">
+                        <img src="/img/thumbnail/khamsat1.png" alt="" class="card-top-image w-100 h-100 object-fit-cover">
+                        <time datetime="">11:22</time>
+                        <i class="bi bi-play-btn play-btn fs-1"></i>
+                        <i class="bi bi-clock watch-later "></i>
+                      </a>
+                      <i class="bi bi-x remove"></i>
+                    </div>
+                    <div class="col-md-7 col-xl-8 card-body">
+                        <a href="watch.html"><h4>تعلم كيف تقدم مهاراتك على موقع خمسات</h4></a>
+                        <p>ستتعلم من خلال هذا الدرس كيف تربح مبالغ كبيرة من خلال تقديم مهاراتك على موقع خمسات. 
+                          عند مشاهدتك لهذا المقطع و اتباع الخطوات بشكل جيد سيصل ربح الى 100$ يوميا
+                        </p>
+                        <small class="text-muted">
+                          <i class="bi bi-play-btn"> 300 مشاهدة </i> 
+                          <i class="bi bi-clock">  مند 2 شهر</i>
+                        </small>
+                        <a href="channel.html" class="channel-img d-inline-block mx-2">
+                         <img src="/img/khamsat.jpg" alt="" width="30" class="rounded-circle">
+                         <span class="card-text">اكادمية حسوب</span>
+                        </a>
+                    </div>
+                </div>
+          </div>
+          <div class="card mb-3">
+                <div class="card-horizontal d-md-flex d-block">
+                    <div class="col-md-5 col-xl-4 position-relative overflow-hidden">
+                      <a href="watch.html">
+                        <img src="/img/thumbnail/mostaql.png" alt="" class="card-top-image w-100 h-100 object-fit-cover">
+                        <time datetime="">9:32</time>
+                        <i class="bi bi-play-btn play-btn fs-1"></i>
+                        <i class="bi bi-clock watch-later "></i>
+                      </a>
+                      <i class="bi bi-x remove"></i>
+                    </div>
+                    <div class="col-md-7 col-xl-8 card-body">
+                        <a href="watch.html"><h4>وظف أفضل المستقلين الموجودين في الوطن العربي-مستقل</h4></a>
+                        <p>ا تبني التفكير الابتكاري ليس موهبة ولد بها الإنسان أو حكراً على أشخاص بأعينهم، بل هو عضلة فكرية ومهارة قابلة للتطوير والتدريب المستمر. 
+                            الابتكار في جوهره ليس اختراع شيء من العدم، بل هو "إعادة ربط الأشياء الموجودة سابقاً بطريقة جديدة وذكية"
+                        </p>
+                        <small class="text-muted">
+                           <i class="bi bi-play-btn">  100 مشاهدة </i> 
+                           <i class="bi bi-clock">  مند 1 شهر</i>
+                        </small>
+                        <a href="channel.html" class="channel-img d-inline-block mx-2">
+                         <img src="/img/mostaql.png" alt="" width="30" class="rounded-circle">
+                         <span class="card-text">مستقل</span>
+                        </a>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </body>
+</html>
