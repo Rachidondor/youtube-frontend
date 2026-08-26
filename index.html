@@ -3,32 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&family=League+Gothic&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&family=League+Gothic&family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>يوتيوبي</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container">
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
           <i class="bi bi-list"></i>
         </button>
         <a class="navbar-brand ps-2" href="/">
           يوتيوبي
-          <span class="video-icon p-1 mx-1"><i class="bi bi-play-btn"></i></span>
+          <span class="video-icon p-1 mx-1"
+            ><i class="bi bi-play-btn"></i
+          ></span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#suggested-videos">الفيديوهات المقترحة</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#suggested-videos"
+                >الفيديوهات المقترحة</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#recent-videos">المرفوعة حديثا</a>
@@ -38,31 +75,53 @@
             </li>
           </ul>
           <form class="d-flex" role="search" action="search-results.html">
-            <input class="form-control me-2" type="search" placeholder="نص البحث..." aria-label="Search"/>
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="نص البحث..."
+              aria-label="Search"
+            />
             <button class="btn btn-outline-success" type="submit">بحث</button>
           </form>
           <a href="login.html" class="nav-link login ps-2">تسجيل الدخول</a>
         </div>
       </div>
     </nav>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
       <div class="list-group list-group-flash w-100 pt-4">
         <a href="index.html" class="list-group-item list-group-item-action">
           <i class="bi bi-house-door-fill"></i> الصفحة الرئيسية
         </a>
-        <a href="index.html#suggested-videos" class="list-group-item list-group-item-action">
+        <a
+          href="index.html#suggested-videos"
+          class="list-group-item list-group-item-action"
+        >
           <i class="bi bi-compass"></i> الفيديوهات المقترحة
         </a>
-        <a href="index.html#recent-videos" class="list-group-item list-group-item-action">
+        <a
+          href="index.html#recent-videos"
+          class="list-group-item list-group-item-action"
+        >
           <i class="bi bi-plus-square"></i> المرفوعة حديثا
         </a>
-        <a href="index.html#trending-videos" class="list-group-item list-group-item-action">
+        <a
+          href="index.html#trending-videos"
+          class="list-group-item list-group-item-action"
+        >
           <i class="bi bi-fire"></i> الفيديوهات الرائجة
         </a>
         <a href="#" class="list-group-item list-group-item-action">
           <i class="bi bi-play-btn-fill"></i> فيديوهاتي
         </a>
-        <a href="history-log.html" class="list-group-item list-group-item-action">
+        <a
+          href="history-log.html"
+          class="list-group-item list-group-item-action"
+        >
           <i class="bi bi-clock-history"></i> سجل المشاهدة
         </a>
         <a href="#" class="list-group-item list-group-item-action">
@@ -86,27 +145,35 @@
         <a href="#" class="list-group-item list-group-item-action">
           <i class="bi bi-question-circle-fill"></i> المساعدة
         </a>
-        <a href="https://academy.hsoub.com/" class="list-group-item list-group-item-action small text-muted border-bottom-0">
-        دورة تطوير واجهات المستخدم <br>
-        أكادمية حسوب &copy; 2026
+        <a
+          href="https://academy.hsoub.com/"
+          class="list-group-item list-group-item-action small text-muted border-bottom-0"
+        >
+          دورة تطوير واجهات المستخدم <br />
+          أكادمية حسوب &copy; 2026
         </a>
       </div>
     </div>
     <div class="container my-4 py-4">
-      
       <div class="row" id="suggested-videos">
         <h4 class="my-4">الفيديوهات المقترحة</h4>
       </div>
-      <div class="row " >
+      <div class="row">
         <div class="col-lg-4 col-md-6 col-12">
           <div class="card p-1 mb-4">
             <a href="watch.html" class="position-relative overflow-hidden">
-              <img src="public/img/thumbnail/restful.jpg" class="card-img-top" alt="...">
+              <img
+                src="/img/thumbnail/restful.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <time>9:23</time>
               <i class="bi bi-clock watch-later" title="المشاهدة لاحقا"></i>
             </a>
             <div class="card-body p-2">
-              <p class="card-title">شرح فلسفة RESTful- تعلم كيف تبني واجهات REST برمجية بطريقة فعالة</p>
+              <p class="card-title">
+                شرح فلسفة RESTful- تعلم كيف تبني واجهات REST برمجية بطريقة فعالة
+              </p>
             </div>
             <div class="card-footer">
               <small class="text-muted">
@@ -115,7 +182,12 @@
               </small>
             </div>
             <a href="channel.html">
-              <img src="public/img/ch-logo.png" alt="" width="30" class="rounded-circle my-2 ms-3">
+              <img
+                src="/img/ch-logo.png"
+                alt=""
+                width="30"
+                class="rounded-circle my-2 ms-3"
+              />
               <span class="card-text">أكادمية حسوب</span>
             </a>
           </div>
@@ -123,12 +195,18 @@
         <div class="col-lg-4 col-md-6 col-12">
           <div class="card p-1 mb-4">
             <a href="watch.html" class="position-relative overflow-hidden">
-              <img src="public/img/thumbnail/khamsat2.jpg" class="card-img-top" alt="...">
+              <img
+                src="/img/thumbnail/khamsat2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <time>9:23</time>
               <i class="bi bi-clock watch-later" title="المشاهدة لاحقا"></i>
             </a>
             <div class="card-body p-2">
-              <p class="card-title">أفضل طريقة لربح الكثير من المال من موقع خمسات-تعلم خطوة بخطوة.</p>
+              <p class="card-title">
+                أفضل طريقة لربح الكثير من المال من موقع خمسات-تعلم خطوة بخطوة.
+              </p>
             </div>
             <div class="card-footer">
               <small class="text-muted">
@@ -137,7 +215,12 @@
               </small>
             </div>
             <a href="channel.html">
-              <img src="public/img/khamsat.jpg" alt="" width="30" class="rounded-circle my-2 ms-3">
+              <img
+                src="/img/khamsat.jpg"
+                alt=""
+                width="30"
+                class="rounded-circle my-2 ms-3"
+              />
               <span class="card-text">خمسات</span>
             </a>
           </div>
@@ -145,12 +228,18 @@
         <div class="col-lg-4 col-md-6 col-12">
           <div class="card p-1 mb-4">
             <a href="watch.html" class="position-relative overflow-hidden">
-              <img src="/img/thumbnail/mostaql.png" class="card-img-top" alt="...">
+              <img
+                src="/img/thumbnail/mostaql.png"
+                class="card-img-top"
+                alt="..."
+              />
               <time>9:23</time>
               <i class="bi bi-clock watch-later" title="المشاهدة لاحقا"></i>
             </a>
             <div class="card-body p-2">
-              <p class="card-title">وظف أفضل المستقلين الموجودين في الوطن العربي-مستقل.</p>
+              <p class="card-title">
+                وظف أفضل المستقلين الموجودين في الوطن العربي-مستقل.
+              </p>
             </div>
             <div class="card-footer">
               <small class="text-muted">
@@ -159,7 +248,12 @@
               </small>
             </div>
             <a href="channel.html">
-              <img src="/img/mostaql.png" alt="" width="30" class="rounded-circle my-2 ms-3">
+              <img
+                src="/img/mostaql.png"
+                alt=""
+                width="30"
+                class="rounded-circle my-2 ms-3"
+              />
               <span class="card-text">مستقل</span>
             </a>
           </div>
@@ -167,12 +261,19 @@
         <div class="col-lg-4 col-md-6 col-12">
           <div class="card p-1 mb-4">
             <a href="watch.html" class="position-relative overflow-hidden">
-              <img src="public/img/thumbnail/mostaql1.jpg" class="card-img-top" alt="...">
+              <img
+                src="/img/thumbnail/mostaql1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <time>9:23</time>
               <i class="bi bi-clock watch-later" title="المشاهدة لاحقا"></i>
             </a>
             <div class="card-body p-2">
-              <p class="card-title">تواصل مع أفضل المبدعين العرب عن طريق منصة مستقل-المنصة الأولى عربيا للعمل الحر.</p>
+              <p class="card-title">
+                تواصل مع أفضل المبدعين العرب عن طريق منصة مستقل-المنصة الأولى
+                عربيا للعمل الحر.
+              </p>
             </div>
             <div class="card-footer">
               <small class="text-muted">
@@ -181,7 +282,12 @@
               </small>
             </div>
             <a href="channel.html">
-              <img src="public/img/mostaql.png" alt="" width="30" class="rounded-circle my-2 ms-3">
+              <img
+                src="/img/mostaql.png"
+                alt=""
+                width="30"
+                class="rounded-circle my-2 ms-3"
+              />
               <span class="card-text">مستقل</span>
             </a>
           </div>
@@ -189,12 +295,19 @@
         <div class="col-lg-4 col-md-6 col-12">
           <div class="card p-1 mb-4">
             <a href="watch.html" class="position-relative overflow-hidden">
-              <img src="public/img/thumbnail/khamsat1.png" class="card-img-top" alt="...">
+              <img
+                src="/img/thumbnail/khamsat1.png"
+                class="card-img-top"
+                alt="..."
+              />
               <time>9:23</time>
               <i class="bi bi-clock watch-later" title="المشاهدة لاحقا"></i>
             </a>
             <div class="card-body p-2">
-              <p class="card-title">تعلم كيف تقدم مهاراتك على موقع خمسات_حقق دخل اضافي من خلال بيع الخدمات</p>
+              <p class="card-title">
+                تعلم كيف تقدم مهاراتك على موقع خمسات_حقق دخل اضافي من خلال بيع
+                الخدمات
+              </p>
             </div>
             <div class="card-footer">
               <small class="text-muted">
@@ -203,7 +316,12 @@
               </small>
             </div>
             <a href="channel.html">
-              <img src="public/img/khamsat.jpg" alt="" width="30" class="rounded-circle my-2 ms-3">
+              <img
+                src="/img/khamsat.jpg"
+                alt=""
+                width="30"
+                class="rounded-circle my-2 ms-3"
+              />
               <span class="card-text">خمسات</span>
             </a>
           </div>
@@ -211,12 +329,18 @@
         <div class="col-lg-4 col-md-6 col-12">
           <div class="card p-1 mb-4">
             <a href="watch.html" class="position-relative overflow-hidden">
-              <img src="public/img/thumbnail/ruby1.jpg" class="card-img-top" alt="...">
+              <img
+                src="/img/thumbnail/ruby1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <time>9:23</time>
               <i class="bi bi-clock watch-later" title="المشاهدة لاحقا"></i>
             </a>
             <div class="card-body p-2">
-              <p class="card-title">شرح فلسفة RESTful-تعلم كيف تبني واجهات REST برمجية بطريقة فعالة</p>
+              <p class="card-title">
+                شرح فلسفة RESTful-تعلم كيف تبني واجهات REST برمجية بطريقة فعالة
+              </p>
             </div>
             <div class="card-footer">
               <small class="text-muted">
@@ -225,110 +349,205 @@
               </small>
             </div>
             <a href="channel.html">
-              <img src="public/img/ch-logo.png" alt="" width="30" class="rounded-circle my-2 ms-3">
+              <img
+                src="/img/ch-logo.png"
+                alt=""
+                width="30"
+                class="rounded-circle my-2 ms-3"
+              />
               <span class="card-text">أكادمية حسوب</span>
             </a>
           </div>
         </div>
       </div>
       <div class="row" id="recent-videos">
-        <h4 my-4> المرفوعة حديثا</h4>
+        <h4 my-4>المرفوعة حديثا</h4>
       </div>
       <div class="row">
         <div class="col-lg-3 col-sm-6 col-12">
           <figure class="ratio ratio-16x9">
-            <img src="public/img/thumbnail/restful.jpg" class="img-fluid rounded" alt="photo">
+            <img
+              src="/img/thumbnail/restful.jpg"
+              class="img-fluid rounded"
+              alt="photo"
+            />
             <a href="watch.html" class="stretched-link"></a>
-            <div class="video-overlay rounded position-absolute bottom-0 start-0 end-0 p-2">
+            <div
+              class="video-overlay rounded position-absolute bottom-0 start-0 end-0 p-2"
+            >
               <small class="badge bg-dark date">قبل يوم</small>
               <time class="badge bg-dark">7:22</time>
             </div>
           </figure>
           <figcaption>
-            <a href="watch.html" class="fw-bold fig-title">فلسفة RESTful-2026</a>
-            <small class="d-block text-muted">قناة: <a href="channel.html">أكادمية حسوب</a> 4400 مشاهدة</small>
+            <a href="watch.html" class="fw-bold fig-title"
+              >فلسفة RESTful-2026</a
+            >
+            <small class="d-block text-muted"
+              >قناة: <a href="channel.html">أكادمية حسوب</a> 4400 مشاهدة</small
+            >
           </figcaption>
         </div>
         <div class="col-lg-3 col-sm-6 col-12">
           <figure class="ratio ratio-16x9">
-            <img src="public/img/thumbnail/khamsat1.png" class="img-fluid rounded" alt="photo">
+            <img
+              src="/img/thumbnail/khamsat1.png"
+              class="img-fluid rounded"
+              alt="photo"
+            />
             <a href="watch.html" class="stretched-link"></a>
-            <div class="video-overlay rounded position-absolute bottom-0 start-0 end-0 p-2">
+            <div
+              class="video-overlay rounded position-absolute bottom-0 start-0 end-0 p-2"
+            >
               <small class="badge bg-dark date">قبل يوم</small>
               <time class="badge bg-dark">7:52</time>
             </div>
           </figure>
           <figcaption>
-            <a href="watch.html" class="fw-bold fig-title">تعلم كيف تقدم مهاراتك على موقع خمسات</a>
-            <small class="d-block text-muted">قناة: <a href="channel.html">خمسات</a> 4000 مشاهدة</small>
+            <a href="watch.html" class="fw-bold fig-title"
+              >تعلم كيف تقدم مهاراتك على موقع خمسات</a
+            >
+            <small class="d-block text-muted"
+              >قناة: <a href="channel.html">خمسات</a> 4000 مشاهدة</small
+            >
           </figcaption>
         </div>
         <div class="col-lg-3 col-sm-6 col-12">
           <figure class="ratio ratio-16x9">
-            <img src="public/img/thumbnail/php.jpg" class="img-fluid rounded" alt="photo">
+            <img
+              src="/img/thumbnail/php.jpg"
+              class="img-fluid rounded"
+              alt="photo"
+            />
             <a href="watch.html" class="stretched-link"></a>
-            <div class="video-overlay rounded position-absolute bottom-0 start-0 end-0 p-2">
+            <div
+              class="video-overlay rounded position-absolute bottom-0 start-0 end-0 p-2"
+            >
               <small class="badge bg-dark date">قبل يوم</small>
               <time class="badge bg-dark">9:32</time>
             </div>
           </figure>
           <figcaption>
-            <a href="watch.html" class="fw-bold fig-title">دورة تطوير تطبيقات الويب باستخدام PHP</a>
-            <small class="d-block text-muted">قناة: <a href="channel.html">أكادمية حسوب</a> 1000 مشاهدة</small>
+            <a href="watch.html" class="fw-bold fig-title"
+              >دورة تطوير تطبيقات الويب باستخدام PHP</a
+            >
+            <small class="d-block text-muted"
+              >قناة: <a href="channel.html">أكادمية حسوب</a> 1000 مشاهدة</small
+            >
           </figcaption>
         </div>
         <div class="col-lg-3 col-sm-6 col-12">
           <figure class="ratio ratio-16x9">
-            <img src="public/img/thumbnail/mostaql1.jpg" class="img-fluid rounded" alt="photo">
+            <img
+              src="/img/thumbnail/mostaql1.jpg"
+              class="img-fluid rounded"
+              alt="photo"
+            />
             <a href="watch.html" class="stretched-link"></a>
-            <div class="video-overlay rounded position-absolute bottom-0 start-0 end-0 p-2">
+            <div
+              class="video-overlay rounded position-absolute bottom-0 start-0 end-0 p-2"
+            >
               <small class="badge bg-dark date">قبل يوم</small>
               <time class="badge bg-dark">7:02</time>
             </div>
           </figure>
           <figcaption>
-            <a href="watch.html" class="fw-bold fig-title">تواصل مه أفضل المبدعين العرب-مستقل</a>
-            <small class="d-block text-muted">قناة: <a href="channel.html">مستقل</a> 2.3 مليون مشاهدة</small>
+            <a href="watch.html" class="fw-bold fig-title"
+              >تواصل مه أفضل المبدعين العرب-مستقل</a
+            >
+            <small class="d-block text-muted"
+              >قناة: <a href="channel.html">مستقل</a> 2.3 مليون مشاهدة</small
+            >
           </figcaption>
         </div>
       </div>
-      
+
       <div class="row" id="trending-videos">
         <h4 class="mb-4 mt-5">الفيديوهات الرائجة</h4>
       </div>
       <div class="row">
         <div class="col-lg-4 order-lg-1 order-2">
           <div class="list-group">
-            <a href="#list-trend1" class="list-group-item list-group-item-action d-flex align-items-center active" aria-current="true" data-bs-toggle="list">
-              <div class="ratio ratio-16x9 m-2" style="width: 144px; flex-shrink: 0;">
-                <img src="/img/thumbnail/khamsat3.png" class="img-fluid rounded" alt="photo">
+            <a
+              href="#list-trend1"
+              class="list-group-item list-group-item-action d-flex align-items-center active"
+              aria-current="true"
+              data-bs-toggle="list"
+            >
+              <div
+                class="ratio ratio-16x9 m-2"
+                style="width: 144px; flex-shrink: 0"
+              >
+                <img
+                  src="/img/thumbnail/khamsat3.png"
+                  class="img-fluid rounded"
+                  alt="photo"
+                />
               </div>
               <div class="me-3">
                 <div class="fw-bold">خطوات بسيطة للتسجيل بموقع خمسات</div>
                 <small>2 مليون مشاهدة. قبل 6أشهر</small>
               </div>
             </a>
-            <a href="#list-trend2" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true" data-bs-toggle="list">
-              <div class="ratio ratio-16x9 m-2" style="width: 144px; flex-shrink: 0;">
-                <img src="/img/thumbnail/php.jpg" class="img-fluid rounded" alt="photo">
+            <a
+              href="#list-trend2"
+              class="list-group-item list-group-item-action d-flex align-items-center"
+              aria-current="true"
+              data-bs-toggle="list"
+            >
+              <div
+                class="ratio ratio-16x9 m-2"
+                style="width: 144px; flex-shrink: 0"
+              >
+                <img
+                  src="/img/thumbnail/php.jpg"
+                  class="img-fluid rounded"
+                  alt="photo"
+                />
               </div>
               <div class="me-3">
                 <div class="fw-bold">أكادمية حسوب- دورة php</div>
                 <small>1 مليون مشاهدة. قبل 6أشهر</small>
               </div>
             </a>
-            <a href="#list-trend3" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true" data-bs-toggle="list">
-              <div class="ratio ratio-16x9 m-2" style="width: 144px; flex-shrink: 0;">
-                <img src="/img/thumbnail/khamsat2.jpg" class="img-fluid rounded" alt="photo">
+            <a
+              href="#list-trend3"
+              class="list-group-item list-group-item-action d-flex align-items-center"
+              aria-current="true"
+              data-bs-toggle="list"
+            >
+              <div
+                class="ratio ratio-16x9 m-2"
+                style="width: 144px; flex-shrink: 0"
+              >
+                <img
+                  src="/img/thumbnail/khamsat2.jpg"
+                  class="img-fluid rounded"
+                  alt="photo"
+                />
               </div>
               <div class="me-3">
-                <div class="fw-bold">أفضل طريقة لربح الكثير من المال من موقع خمسات</div>
+                <div class="fw-bold">
+                  أفضل طريقة لربح الكثير من المال من موقع خمسات
+                </div>
                 <small>900 ألف مشاهدة. قبل 6أشهر</small>
               </div>
             </a>
-            <a href="#list-trend4" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true" data-bs-toggle="list">
-              <div class="ratio ratio-16x9 m-2" style="width: 144px; flex-shrink: 0;">
-                <img src="/img/thumbnail/ruby1.jpg" class="img-fluid rounded" alt="photo">
+            <a
+              href="#list-trend4"
+              class="list-group-item list-group-item-action d-flex align-items-center"
+              aria-current="true"
+              data-bs-toggle="list"
+            >
+              <div
+                class="ratio ratio-16x9 m-2"
+                style="width: 144px; flex-shrink: 0"
+              >
+                <img
+                  src="/img/thumbnail/ruby1.jpg"
+                  class="img-fluid rounded"
+                  alt="photo"
+                />
               </div>
               <div class="me-3">
                 <div class="fw-bold">أكادمية حسوب- دورة Ruby</div>
@@ -339,46 +558,72 @@
         </div>
         <div class="col-lg-8 order-lg-2 order-1">
           <div class="tab-content">
-            <div class="tab-pane position-relative  fade show active" id="list-trend1">
+            <div
+              class="tab-pane position-relative fade show active"
+              id="list-trend1"
+            >
               <div>
                 <a href="watch.html" class="stretched-link">
-               <img src="/img/thumbnail/khamsat3.png" alt="photo" class="ratio ratio-16x9 mb-3">
-               </a>
+                  <img
+                    src="/img/thumbnail/khamsat3.png"
+                    alt="photo"
+                    class="ratio ratio-16x9 mb-3"
+                  />
+                </a>
               </div>
               <h5>خطوات بسيطة للتسجيل بموقع خمسات</h5>
-              <p>وصف قصير للفيديو الرائج_ لماذا انتشر و ما الذي يقدمه للمشاهدين.</p>
+              <p>
+                وصف قصير للفيديو الرائج_ لماذا انتشر و ما الذي يقدمه للمشاهدين.
+              </p>
             </div>
             <div class="tab-pane position-relative fade" id="list-trend2">
               <div>
                 <a href="watch.html" class="stretched-link">
-               <img src="/img/thumbnail/php.jpg" alt="photo" class="ratio ratio-16x9 mb-3">
-               </a>
+                  <img
+                    src="/img/thumbnail/php.jpg"
+                    alt="photo"
+                    class="ratio ratio-16x9 mb-3"
+                  />
+                </a>
               </div>
               <h5>أكادمية حسوب_ دورة php</h5>
-              <p>وصف قصير للفيديو الرائج_ لماذا انتشر و ما الذي يقدمه للمشاهدين.</p>
+              <p>
+                وصف قصير للفيديو الرائج_ لماذا انتشر و ما الذي يقدمه للمشاهدين.
+              </p>
             </div>
             <div class="tab-pane position-relative fade" id="list-trend3">
               <div>
                 <a href="watch.html" class="stretched-link">
-               <img src="/img/thumbnail/khamsat2.jpg" alt="photo" class="ratio ratio-16x9 mb-3">
-               </a>
+                  <img
+                    src="/img/thumbnail/khamsat2.jpg"
+                    alt="photo"
+                    class="ratio ratio-16x9 mb-3"
+                  />
+                </a>
               </div>
               <h5>أفضل طريقة لربح الكثير من المال من موقع خمسات</h5>
-              <p>وصف قصير للفيديو الرائج_ لماذا انتشر و ما الذي يقدمه للمشاهدين.</p>
+              <p>
+                وصف قصير للفيديو الرائج_ لماذا انتشر و ما الذي يقدمه للمشاهدين.
+              </p>
             </div>
             <div class="tab-pane position-relative fade" id="list-trend4">
               <div>
                 <a href="watch.html" class="stretched-link">
-               <img src="/img/thumbnail/ruby1.jpg" alt="photo" class="ratio ratio-16x9 mb-3">
-               </a>
+                  <img
+                    src="/img/thumbnail/ruby1.jpg"
+                    alt="photo"
+                    class="ratio ratio-16x9 mb-3"
+                  />
+                </a>
               </div>
               <h5>أكادمية حسوب_ دورة Ruby</h5>
-              <p>وصف قصير للفيديو الرائج_ لماذا انتشر و ما الذي يقدمه للمشاهدين.</p>
+              <p>
+                وصف قصير للفيديو الرائج_ لماذا انتشر و ما الذي يقدمه للمشاهدين.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
